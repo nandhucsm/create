@@ -1,0 +1,173 @@
+<html lang="en">
+    <head>
+      <title>Volume Calculator</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="./style.css">
+    </head>
+    <body style="padding-left: 15%;padding-right: 15%;background-image: url(https://t3.ftcdn.net/jpg/02/90/46/84/360_F_290468474_6yJ9eBPW2wevarR9cbXN87TCFJDVVuAR.jpg);">
+        
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <div class="row bg-dark"  id="aa" >
+        <div class="col-md-4 ">
+           
+        </div>
+        <div class="col-md-4  "> 
+          <h3 class="font-weight-bold  text-center p-3 text-white " style="font-family: 'Times New Roman', Times, serif;">Volume Calulator  <h1></h1></p> </h3>  
+        </div>
+        <div class="col-md-5">        
+        </div>
+    </div >
+      <form action="">
+        <div class="col-md-4"> 
+          <p class="text-secondary"><img src="https://media.geeksforgeeks.org/wp-content/uploads/sphere2-1.jpg" alt="" class="float-right " width="260" height="170"></p>
+       </div>
+      <div class="bg-info">
+        <div>
+        <h2>Volume of Sphere</h2><br><br><br>
+        <form action="">
+          <label for="sr">Radius:</label>
+          <input type="text" id="sr" name="sr">m<br><br>
+          <label for="res1">Result:</label>
+          <input type="text" id="res1" name="res1">(m^3)<br><br>
+          <input type="button" value="Calculate" class="btn btn-warning" onclick="sph()">
+        </form>
+      </div>
+        <div class="col-md-4"> 
+          <p class="text-secondary"><img src="data:image/jpeg;base64,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" alt="" class="float-right " width="260" height="170"></p>
+       </div>
+      </div>
+      <div class="bg-warning">
+        <h2>Volume of Cone</h2><br><br><br>
+        <form action="">
+          <label for="c1r1">Radius</label>
+          <input type="text" id="c1r1">m<br><br>
+          <label for="c1h1">Height</label>
+          <input type="text" id="c1h1">m<br><br>
+          <label for="res2">Result</label>
+          <input type="text" id="res2">(m^3)<br><br>
+          <input type="button" value="Calculate" class="btn btn-info" onclick="cone()">
+        </form>
+        <div class="col-md-4"> 
+          <p class="text-secondary"><img src="https://curvebreakerstestprep.com/wp-content/uploads/2021/04/Volume-of-a-Cube.png" alt="" class="float-right " width="260" height="170"></p>
+       </div>
+      </div>
+      <div class="bg-info">
+        <h2>Volume of Cube</h2><br><br><br>
+        <form action="">
+          <label for="c2r2">Radius</label>
+          <input type="text" id="c2r2">m<br><br>
+          <label for="res3">Result</label>
+          <input type="text" id="res3">(m^3)<br><br>
+          <input type="button" value="Calculate" class="btn btn-warning" onclick="cube()">
+        </form>
+        <div class="col-md-4"> 
+          <p class="text-secondary"><img src="https://media.geeksforgeeks.org/wp-content/uploads/cylinder.jpg" alt="" class="float-right " width="260" height="170"></p>
+       </div>
+      </div><div class="bg-warning">
+        <h2>Volume of Cylinder</h2><br><br><br>
+        <form action="">
+          <label for="c3r3">Radius</label>
+          <input type="text" id="c3r3">m<br><br>
+          <label for="c3h3">Height</label>
+          <input type="text" id="c3h3">m<br><br>
+          <label for="res4">Result</label>
+          <input type="text" id="res4">(m^3)<br><br>
+          <input type="button" value="Calculate" class="btn btn-info" onclick="cyl()">
+        </form>
+        <div class="col-md-4"> 
+          <p class="text-secondary"><img src="https://www.vcalc.com/attachments/dd1b39f3-294d-11e4-b7aa-bc764e2038f2/Capsulevolume-illustration.png" alt="" class="float-right " width="260" height="170"></p>
+       </div>
+      </div>
+      <div class="bg-info">
+        <h2>Volume of Capsule</h2><br><br><br>
+        <form action="">
+          <label for="c4r4">Radius</label>
+          <input type="text" id="c4r4">m<br><br>
+          <label for="c4h4">Height</label>
+          <input type="text" id="c4h4">m<br><br>
+          <label for="res5">Result</label>
+          <input type="text" id="res5">(m^3)<br><br>
+          <input type="button" value="Calculate" class="btn btn-warning" onclick="cap()">
+        </form>
+        <div class="col-md-4"> 
+          <p class="text-secondary"><img src="https://www.web-formulas.com/displayImage.aspx?imageid=477" alt="" class="float-right " width="260" height="170"></p>
+       </div>
+       </div>
+      <div class="bg-warning">
+        <h2>Volume of Ellipse</h2><br><br><br>
+        <form action="">
+          <label for="a1">Axis1(a)</label>
+          <input type="text" id="a1">m<br><br>
+          <label for="b1">Axis1(b)</label>
+          <input type="text" id="b1">m<br><br>
+          <label for="c1">Axis1(c)</label>
+          <input type="text" id="c1">m<br><br>
+          <label for="res6">Result</label>
+          <input type="text" id="res6">(m^3)<br><br>
+          <input type="button" value="Calculate" class="btn btn-info" onclick="eli()">
+        </form>
+        <div class="col-md-4"> 
+          <p class="text-secondary"><img src="https://www.onlinemath4all.com/images/pyramid9.jpg" alt="" class="float-right " width="260" height="170"></p>
+       </div>
+       </div>
+       <div class="bg-info">
+        <h2>Volume of Pyramid</h2><br><br><br>
+        <form action="">
+          <label for="p1b1">BEdge</label>
+          <input type="text" id="p1b1">m<br><br>
+          <label for="p1h1">Height</label>
+          <input type="text" id="p1h1">m<br><br>
+          <label for="res7">Result</label>
+          <input type="text" id="res7">(m^3)<br><br>
+          <input type="button" value="Calculate" class="btn btn-warning" onclick="pra()">
+        </form>
+      </div>
+      </form>
+      <script>
+        function sph(){
+          var rad = parseInt(document.getElementById("sr").value);
+          document.getElementById("res1").value=Math.round((4/3)*3.14*rad*rad*rad*100000)/100000;
+        }
+        function cone(){
+          var rad = parseInt(document.getElementById("c1r1").value);
+          var h = parseInt(document.getElementById("c1h1").value);
+          document.getElementById("res2").value=Math.round((1/3)*3.14*rad*rad*h*100000)/100000;
+        }
+        function cube(){
+          var rad = parseInt(document.getElementById("c2r2").value);
+          document.getElementById("res3").value=(rad*rad*rad);
+        }
+        function cyl(){
+          var rad = parseInt(document.getElementById("c3r3").value);
+          var h = parseInt(document.getElementById("c3h3").value);
+          document.getElementById("res4").value=Math.round(3.14*rad*rad*h*100000)/100000;
+        }
+        function cap(){
+          var rad = parseInt(document.getElementById("c4r4").value);
+          var h = parseInt(document.getElementById("c4h4").value);
+          document.getElementById("res5").value=Math.round((((4/3)*3.14*rad*rad*rad)+(3.14*rad*rad*h))*100000)/100000;
+        }
+        function eli(){
+          var a = parseInt(document.getElementById("a1").value);
+          var b = parseInt(document.getElementById("b1").value);
+          var c = parseInt(document.getElementById("c1").value);
+          document.getElementById("res6").value=Math.round((4/3)*3.14*a*b*c*100000)/100000;
+        }
+        function pra(){
+          var a = parseInt(document.getElementById("p1b1").value);
+          var h = parseInt(document.getElementById("p1h1").value);
+          document.getElementById("res7").value=Math.round((1/3)*a*a*h*100000)/100000;
+        }
+      </script>
+</body>
+</html>
